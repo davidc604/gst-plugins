@@ -1,6 +1,10 @@
 WHAT IT IS
 ----------
 
+Version 0.1
+
 gst-udpdemux is a plugin that redirects UDP packets based on the given identifier.
+
+
 
 
