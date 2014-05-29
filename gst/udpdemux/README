@@ -1,10 +1,26 @@
 WHAT IT IS
 ----------
 
+gst-udpdemux is a plugin that demux/redirects UDP packets from sink to src based on the given identifier.
+
+
+Version 0.2
+
+Supports demuxing UDP packets of three types based on identifier:
+    0. Control: RTCP packets.
+    1. Video: Video packets.
+    2. Audio: Audio packets.
+
+Currently all caps are static caps. Future works include changing to dynamic allocating caps based on connected downstream elements. It is assumed that the first byte of the arriving UDP packet contains the identifier.
+
+
 Version 0.1
 
-gst-udpdemux is a plugin that redirects UDP packets based on the given identifier.
+Initial commit.
 
 
+Future works and known issue:
+    - Error check if identifier exists.
+    - Dynamically allocate src caps.
 
 

@@ -23,6 +23,9 @@
  * Boston, MA 02110-1301, USA.
  */
 
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 2
+
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -482,8 +485,8 @@ plugin_init (GstPlugin * plugin)
 }
 
 GST_PLUGIN_DEFINE (
-    GST_VERSION_MAJOR,
-    GST_VERSION_MINOR,
+    VERSION_MAJOR,
+    VERSION_MINOR,
     udpdemux,
     "UDP packet demux",
     plugin_init,
