@@ -3,6 +3,8 @@ WHAT IT IS
 
 gst-yuvtorgb is a YUV420(I420) to ARGB converter using the libyuv library.
 
+GStreamer version of 1.0 and above is required. A copy of GStreamer can be found at (http://gstreamer.freedesktop.org/)
+
 The plugin depends on the library libyuv, which a copy can be obtained at (https://code.google.com/p/libyuv/). A wiki page of how to obtain and build libyuv can be found at: https://code.google.com/p/libyuv/wiki/GettingStarted
 
 For building the plugin, must have the following set,
