@@ -32,6 +32,9 @@
  * </refsect2>
  */
 
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 2
+
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -377,8 +380,8 @@ plugin_init (GstPlugin * plugin)
 /* gstreamer looks for this structure to register yuvtorgbs
  */
 GST_PLUGIN_DEFINE (
-    GST_VERSION_MAJOR,
-    GST_VERSION_MINOR,
+    VERSION_MAJOR,
+    VERSION_MINOR,
     yuvtorgb,
     "Converts I420 to ARGB using libyuv",
     plugin_init,
